@@ -3,8 +3,12 @@
 
 已更新 ： 
 [Transformer模型详解，附简易代码实现](https://github.com/KangkangLoveNLP/Facing-the-most-basic-tutorial-for-beginners-on-large-models/blob/main/Transformer/readme.md)
-
+[基于Transformer的各种模型的简单介绍以及发展脉络](https://github.com/KangkangLoveNLP/Facing-the-most-basic-tutorial-for-beginners-on-large-models/blob/main/%E5%9F%BA%E4%BA%8ETransformer%E7%9A%84%E5%90%84%E7%A7%8D%E6%A8%A1%E5%9E%8B%E6%9E%B6%E6%9E%84%E7%9A%84%E5%8F%98%E5%8C%96/readme.md)
 未更新：
-大模型的发展脉络
-主流模型的架构变化
+GPT系列
+bert详解
+量化详解
+微调bert下游任务大全
+transformer库
+
 ...
