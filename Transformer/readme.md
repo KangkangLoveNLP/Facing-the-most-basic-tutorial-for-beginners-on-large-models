@@ -78,9 +78,13 @@ class SimpleEmbedding(nn.Module):
 
 我们会使用正弦余弦函数来为每个位置生成一个位置编码向量。
 
-\[ PE_{(pos,2i)} = \sin\left(\frac{pos}{10000^{2i/d_{\text{model}}}}\right), \]
+$$
+PE_{(pos,2i)} = \sin\left(\frac{pos}{10000^{2i/d_{\text{model}}}}\right),
+$$
 
-\[ PE_{(pos,2i+1)} = \cos\left(\frac{pos}{10000^{2i/d_{\text{model}}}}\right). \]
+$$
+PE_{(pos,2i+1)} = \cos\left(\frac{pos}{10000^{2i/d_{\text{model}}}}\right).
+$$
 
 其中，pos表示位置，d_model表示模型的维度，一般设置为512。
 
@@ -109,21 +113,32 @@ class SimpleEmbedding(nn.Module):
 ##### pos=0（就是第一个单词hello）
 
 PE(0,0)=sin(0)=0
+
 PE(0,1)=cos(0)=1
+
 PE(0,2)=sin(0)=0
+
 PE(0,3)=cos(0)=1
 
 因此，位置0（hello）的编码向量为：[0,1,0,1]。
 
 ##### 对于位置 pos=1(world)
 
-​\( PE(1,0) = \sin\left(\frac{1}{10000^0}\right) = \sin(1) \approx 0.8415 \)
+$$
+PE(1,0) = \sin\left(\frac{1}{10000^0}\right) = \sin(1) \approx 0.8415
+$$
 
-- \( PE(1,1) = \cos\left(\frac{1}{10000^0}\right) = \cos(1) \approx 0.5403 \)
+$$
+PE(1,1) = \cos\left(\frac{1}{10000^0}\right) = \cos(1) \approx 0.5403
+$$
 
-- \( PE(1,2) = \sin\left(\frac{1}{10000^1}\right) = \sin(0.0001) \approx 0.0001 \)
+$$
+PE(1,2) = \sin\left(\frac{1}{10000^1}\right) = \sin(0.0001) \approx 0.0001
+$$
 
-- \( PE(1,3) = \cos\left(\frac{1}{10000^1}\right) = \cos(0.0001) \approx 1 \)
+$$
+PE(1,3) = \cos\left(\frac{1}{10000^1}\right) = \cos(0.0001) \approx 1
+$$
 
 因此，位置1的编码向量为：[0.8415,0.5403,0.0001,1]。
 
