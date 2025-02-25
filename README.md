@@ -7,6 +7,8 @@
 
 [基于Transformer的各种模型的简单介绍以及发展脉络](https://github.com/KangkangLoveNLP/Facing-the-most-basic-tutorial-for-beginners-on-large-models/blob/main/%E5%9F%BA%E4%BA%8ETransformer%E7%9A%84%E5%90%84%E7%A7%8D%E6%A8%A1%E5%9E%8B%E6%9E%B6%E6%9E%84%E7%9A%84%E5%8F%98%E5%8C%96/readme.md)
 
+[《LLM核心技术揭秘：从Tokenization到Embedding，一文读懂大模型的底层逻辑》](https://github.com/KangkangLoveNLP/Facing-the-most-basic-tutorial-for-beginners-on-large-models/tree/main/LLM%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86)
+
 未更新：
 
 GPT系列
